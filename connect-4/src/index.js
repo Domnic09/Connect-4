@@ -4,10 +4,12 @@ import Gameboard from './Components/GameBoard';
 import GameCircle from './Components/GameCircle';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    // <Gameboard />,
-    <GameCircle />,
-    document.getElementById('root')
+ReactDOM.render(
+  <React.StrictMode>
+    <Gameboard />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
 
 
